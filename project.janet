@@ -16,3 +16,6 @@
 
 (phony "testw" []
   (os/shell "find . -name '*.janet' | entr -r -d jpm test"))
+
+(phony "dev" []
+  (os/shell "find . -name '*.janet' | entr -r -d janet src/main.janet"))

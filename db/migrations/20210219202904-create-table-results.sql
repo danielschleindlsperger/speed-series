@@ -7,7 +7,7 @@ create table results (
   upload_bandwidth_bytes integer not null,
   latency_ms NUMBER not null,
   jitter NUMBER not null,
-  server_id text not null
+  server_id integer not null
 );
 
 
